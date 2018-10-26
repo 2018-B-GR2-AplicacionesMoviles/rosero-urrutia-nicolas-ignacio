@@ -19,7 +19,8 @@ fun main(args: Array<String>){
         println("                 ☻Menu Principal☻                  \n")
         println(" 1.Realizar Compra")
         println(" 2.Consultar Facturas")
-        println(" 3.Salir")
+        println(" 3.Consultar Productos")
+        println(" 4.Salir")
         println(" ♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠\n")
 
         println("Ingrese la Opcion: ")
@@ -141,8 +142,15 @@ fun main(args: Array<String>){
                 println ("♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠•♠  ")
             }
 
+
+            3->{
+
+                BaseDeDatos.imporimirProductos()
+
+            }
+
         //Fin
-            3 -> {  println("☻HASTA PRONTO☻")
+            4 -> {  println("☻HASTA PRONTO☻")
                 return}
         }
 
@@ -253,6 +261,21 @@ class BaseDeDatos{
 
 
          }
+
+        fun imporimirProductos(){
+
+            println("              ☻Lista de Productos☻                  \n")
+            println()
+            for (e in disfraces) {
+
+                println("Nombre: ${e.nombreDisfraz}\t Talla:${e.talla}" +
+                        " \t Stock:${e.cantidad}" +
+                        "\t P.unit: ${e.precio} ")
+
+            }
+
+        }
+
 
 
         fun validarStockDisfraz(pos:Int,cantidad:Int):Boolean{
