@@ -16,17 +16,10 @@ class MainActivity : AppCompatActivity() {
 
             this.irAPantallaDeBotones()
 
-/*
+        /*
             Log.i("navegacion","Hola")
-            Log.w("navegacion","Hola")
-            Log.d("navegacion","Hola")
-            Log.e("navegacion","Hola")
-            Log.v("navegacion","Hola")*/
+            */
         }
-
-
-
-
 
 
 
@@ -37,8 +30,12 @@ class MainActivity : AppCompatActivity() {
 
         //INTENT
 
-        val intentIrABotones = Intent(this, ButtonActivity::class.java)
-
+        val intentIrABotones = Intent(this, ButtonActivity::class.java)// cuando se manda el nombre de la clase es explicito
+        intentIrABotones.putExtra("nombre","Nicolas")
+        intentIrABotones.putExtra("apellido","Rosero")//Mandar datos a otras actividades
+        // serializar y deserializar los datos para la comunicacion entre procesos
+        // odra convertirlos a bytes de forma parsealable
+        // en parsealeable cualquier dato como un ppbjeto y queremos mandar a otra actividad no servira parseleable
         this.startActivity(intentIrABotones)
 
     }
