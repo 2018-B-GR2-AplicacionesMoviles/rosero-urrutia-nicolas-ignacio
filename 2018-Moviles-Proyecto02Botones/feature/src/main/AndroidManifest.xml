@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.nirou.a2018_moviles_proyecto02botones.feature">
+          package="com.example.nirou.a2018_moviles_proyecto02botones.feature">
 
     <application>
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".Activity2">
+        </activity>
+        <activity android:name=".ValidarHumano">
+        </activity>
+        <activity android:name=".ListView">
+        </activity>
+        <activity android:name=".checkBoxMaterias">
+        </activity>
+        <activity android:name=".RadioGroup">
         </activity>
     </application>
 
