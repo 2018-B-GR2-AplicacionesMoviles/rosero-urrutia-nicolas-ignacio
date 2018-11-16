@@ -26,6 +26,14 @@ class Activity2 : AppCompatActivity() {
             irRadioGroup()
 
         }
+
+        btnToggle.setOnClickListener {
+
+
+
+            irToggleSwitch()
+
+        }
     }
 
     fun irAListaEst(){
@@ -47,5 +55,12 @@ class Activity2 : AppCompatActivity() {
         //INTENT
         val intentirRadioGroup = Intent(this, RadioGroup::class.java)
         this.startActivity(intentirRadioGroup)
+    }
+
+    fun irToggleSwitch(){
+
+        //INTENT
+        val intentToggleSwitch = Intent(this, ToggleSwitch::class.java)
+        this.startActivity(intentToggleSwitch)
     }
 }
