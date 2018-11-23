@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".checkBoxMaterias">
+
+    <CheckBox
+            android:text="Matematicas"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxMatematicas" android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.481"/>
+    <CheckBox
+            android:text="Literatura"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxLiteratura"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxMatematicas"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxMatematicas"
+            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMatematicas"/>
+    <CheckBox
+            android:text="Programacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxProgramacion" app:layout_constraintStart_toStartOf="@+id/checkBoxLiteratura"
+            android:layout_marginTop="56dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxLiteratura"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxLiteratura"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="Seleccionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonMaterias" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxProgramacion"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxProgramacion"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxProgramacion" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="¿Que materias son tus favoritas?"
+            android:layout_width="134dp"
+            android:layout_height="37dp"
+            android:id="@+id/textView"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/checkBoxMatematicas" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+</android.support.constraint.ConstraintLayout>
