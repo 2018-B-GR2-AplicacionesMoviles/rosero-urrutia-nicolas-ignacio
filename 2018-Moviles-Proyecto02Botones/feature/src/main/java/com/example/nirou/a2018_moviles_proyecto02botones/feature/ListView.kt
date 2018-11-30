@@ -15,7 +15,7 @@ class ListView : AppCompatActivity() {
         setContentView(R.layout.activity_list_view)
 
        var adapter = ArrayAdapter (this, android.R.layout.simple_list_item_1,arrayNombres)
-        listView1.adapter=adapter
+        ListView1.adapter=adapter
 
     }
 }
