@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/nicolasrosero/Documents/GitHub/rosero-urrutia-nicolas-ignacio/app/src/main/assets"/><source path="/Users/nicolasrosero/Documents/GitHub/rosero-urrutia-nicolas-ignacio/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/nicolasrosero/Documents/GitHub/rosero-urrutia-nicolas-ignacio/app/src/debug/assets"/></dataSet></merger>
