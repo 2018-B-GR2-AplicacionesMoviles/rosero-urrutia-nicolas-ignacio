@@ -30,37 +30,50 @@ class Activity2 : AppCompatActivity() {
         btnToggle.setOnClickListener {
 
 
-
             irToggleSwitch()
 
         }
+
+        btnWebView.setOnClickListener {
+
+            irWebView()
+
+        }
+
     }
 
-    fun irAListaEst(){
+    fun irAListaEst() {
 
         //INTENT
         val intentListaEst = Intent(this, ListView::class.java)
         this.startActivity(intentListaEst)
     }
 
-    fun irCheckBoxMaterias(){
+    fun irCheckBoxMaterias() {
 
         //INTENT
         val intentCheckBoxMaterias = Intent(this, checkBoxMaterias::class.java)
         this.startActivity(intentCheckBoxMaterias)
     }
 
-    fun irRadioGroup(){
+    fun irRadioGroup() {
 
         //INTENT
         val intentirRadioGroup = Intent(this, RadioGroup::class.java)
         this.startActivity(intentirRadioGroup)
     }
 
-    fun irToggleSwitch(){
+    fun irToggleSwitch() {
 
         //INTENT
         val intentToggleSwitch = Intent(this, ToggleSwitch::class.java)
         this.startActivity(intentToggleSwitch)
+    }
+
+    fun irWebView() {
+
+        //INTENT
+        val intentWebView = Intent(this, WebView::class.java)
+        this.startActivity(intentWebView)
     }
 }
